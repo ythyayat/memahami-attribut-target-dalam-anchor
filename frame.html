@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar HTML</title>
+        <style>
+            body{
+                font-family:'Segoe UI';
+            }
+            iframe{
+                width: 30%;
+                height: 300px;
+                background-color:aliceblue;
+            }
+            a{
+                padding: 2px;
+                background-color:orange;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <p>Menggunakan "_self" (ini adalah default value)</p>
+        <a href="https://ythyayat.github.io/" title="Yayat Hidayat Portofolio" target="_self">
+            Coba dan rasakan nikmatnya!
+        </a>.
+        
+        <p>Menggunakan "_blank"</p>
+        <a href="https://ythyayat.github.io/" title="Yayat Hidayat Portofolio" target="_blank">
+            Coba dan rasakan nikmatnya!
+        </a>
+        
+        <p>Menggunakan "_parent"</p>
+        <a href="https://ythyayat.github.io/" title="Yayat Hidayat Portofolio" target="_parent">
+            Coba dan rasakan nikmatnya!
+        </a>
+        <hr>
+        <iframe src="parent.html" name="frame1" frameborder="1"></iframe>
+        <iframe src="top.html" name="frame2" frameborder="1"></iframe>
+        <iframe src="top.html" name="frame3" frameborder="1"></iframe>
+        
+        <p>Menggunakan "nameFrame" (ini akan masuk ke frame kedua, karena target="frame2");</p>
+        <a href="https://ythyayat.github.io/" title="Yayat Hidayat Portofolio" target="frame2">
+            Coba dan rasakan nikmatnya!
+        </a>.
+    </body>
+
+</html>
+
